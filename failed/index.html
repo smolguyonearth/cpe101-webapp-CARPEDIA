@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Classification</title>
+    <style>
+        body {
+            background: #000;
+        }
+        .classification {
+            color: aliceblue;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #drop-zone {
+            border: 2px dashed #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+        }
+        #drop-zone input {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="classification">
+        <h1>Image Classification</h1>
+        <div id="drop-zone" ondrop="handleDrop(event)" ondragover="handleDragOver(event)" ondragleave="handleDragLeave(event)">
+            <p>Drag & Drop an image file here</p>
+            <input type="file" name="image" accept=".jpg, .jpeg, .png" id="file-input" onchange="handleFileSelect(event)" />
+        </div>
+        <br>
+        <img id="image-preview" style="max-width: 100%; max-height: 300px; display: none;" />
+        <br>
+        <button onclick="uploadFile()" class="btn btn-primary btn-block btn-large">Predict</button>
+        <br>
+        <h4 style="color: violet;" id="prediction-text">
+            <!-- Prediction text will be displayed here -->
+        </h4>
+    </div>
+
+    <script>
+        var dropZone = document.getElementById('drop-zone');
+        var droppedFile;
+
+        function handleDragOver(event) {
+            event.preventDefault();
+            dropZone.style.borderColor = '#39f';
+        }
+
+        function handleDragLeave(event) {
+            event.preventDefault();
+            dropZone.style.borderColor = '#ccc';
+        }
+
+        function handleDrop(event) {
+            event.preventDefault();
+            dropZone.style.borderColor = '#ccc';
+
+            var files = event.dataTransfer.files;
+            if (files.length > 0) {
+                droppedFile = files[0];
+                document.getElementById('file-input').files = files;
+                handleFileSelect(files);
+
+                // Display image preview
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    var preview = document.getElementById('image-preview');
+                    preview.src = e.target.result;
+                    preview.style.display = 'block';
+                };
+                reader.readAsDataURL(droppedFile);
+            }
+        }
+
+        function handleFileSelect(event) {
+            // You can perform additional actions when a file is selected (optional)
+        }
+
+        function uploadFile() {
+            if (droppedFile) {
+                var formData = new FormData();
+                formData.append('image', droppedFile);
+
+                // You may use AJAX to send the form data to the server here
+                // Example using fetch API:
+                fetch('/predict', { method: 'POST', body: formData })
+                    .then(response => response.json())
+                    .then(data => {
+                        console.log('Success:', data);
+                        document.getElementById('prediction-text').innerText = data.prediction_text;
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                    });
+            }
+        }
+    </script>
+</body>
+</html>

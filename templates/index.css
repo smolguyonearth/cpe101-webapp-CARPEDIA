@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: Poppins;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.text-center{
+    padding: 20px
+}
+
+.btn-primary {
+    background-color: white; /* Set your desired background color */
+    color: black;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+.btn-primary:hover {
+    background-color: cyan; /* Change the background color on hover */
+}
+
+.file-input {
+    display: none;
+    border: 1px solid white; /* Add a white border */
+    padding: 8px; /* Add some padding for better appearance */
+    border-radius: 5px; /* Optionally, add border-radius for rounded corners */
+}

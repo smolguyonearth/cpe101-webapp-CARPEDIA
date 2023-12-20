@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: Poppins;
+    background-color: black;
+}
+
+#page {
+    height: 100vh;
+    background-color: black;
+    width: 100%;
+}
+
+.wrapper {
+    padding-top: 80px; /* Adjusted padding to ensure content is below the fixed navbar */
+}
+
+a{
+    color: unset;
+    text-decoration: none;
+}
+.container{
+    width: 900px;
+    max-width: 90vw;
+    margin: auto;
+    padding-top: 10px;
+    text-align: center;
+}
+.title{
+    font-size: xx-large;
+    padding: 20px 0;
+    color: white;
+}
+.listCar{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 50px;
+    margin: 20px;
+}
+.listCar .item{
+    background-color: #eeeee6;
+    padding: 20px;
+    height: 80%;
+    width: 80%;
+    border-radius: 5px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.listCar .item:hover {
+    transform: translateY(-10px); /* Adjust the value based on your preference */
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.276); /* Optional: Add a box shadow for a lift effect */
+}
+
+.listCar .item h2{
+    font-size: large;
+    font-weight: 500;
+}
+.listCar .item .price{
+    letter-spacing: 7px;
+    font-size: small;
+}
+.listCar .item img {
+    width: 100%; /* Ensure the image takes the full width of its container */
+    height: 100px; /* Set a fixed height for the images */
+    object-fit: cover; /* This property controls how the image is resized to fit its container while maintaining its aspect ratio */
+    /* filter: drop-shadow(0 50px 20px #0009); */
+}
+/* detail page */
+.detail{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px;
+    text-align: left;
+}
+.detail .image img{
+    width: 100%;
+}
+.detail .image{
+    position: relative;
+}
+.detail .name{
+    font-size: xxx-large;
+    padding: 40px 0 0 0;
+    margin: 0 0 10px 0;
+}
+.detail .price{
+    font-weight: bold;
+    font-size: x-large;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+.detail .content{
+    font-weight: 300;
+}
+/*ipad*/
+@media screen and (max-width:992px) {
+    .listCar{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+/* mobile */
+@media screen and (max-width:768px) {
+    .listCar{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .detail{
+        text-align: center;
+    }
+    .detail .img img{
+        width: unset;
+        height: 40vh;
+    }
+    .detail .name{
+        font-size: x-large;
+        margin: 0;
+    }
+}
+
+#search-container {
+    margin: 1em 0;
+    display: flex;
+    justify-content: center;
+  }
+  #search-container input {
+    background-color: transparent;
+    width: 40%;
+    border-bottom: 2px solid #110f29;
+    padding: 1em 0.3em;
+    color: white;
+  }
+  #search-container input:focus {
+    border-bottom-color: black;
+  }
+  #search-container button {
+    padding: 1em 2em;
+    margin-left: 1em;
+    background-color: black;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-top: 0.5em;
+  }
+  .button-value {
+    border: 2px solid black;
+    padding: 1em 2.2em;
+    border-radius: 3em;
+    background-color: transparent;
+    color: gray;
+    cursor: pointer;
+    margin: 2rem;
+  }
+  #buttons {
+    display: flex;
+    justify-content: center;
+    display: inline;
+  }

@@ -1,0 +1,148 @@
+
+/* text css above hero image*/
+
+#start{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header{
+  color: white;
+  z-index: 2;
+  text-align: center;
+}
+
+
+/* .header h1{
+    text-align: center;
+    position: static;
+    top : 160px ; left: auto;
+    font-size: 4.5rem;
+    color: rgb(255, 255, 255);
+    position: relative;  
+}
+
+.header p{
+    text-align: center;
+    position: static;
+    top : 210px ; left: auto;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    position: relative;    
+} */
+
+/* .container{
+    top : 300px ; left: auto;
+} */
+#button1 {
+  background-color: white;
+  color: black;
+  transition: width 1s, transform 1s ease-in-out;
+  height: 3rem;
+  width: 5rem;
+  text-align: center;
+}
+
+#button1:hover {
+  background-color: black;
+  color: white;
+  width: 5.5rem;
+
+  text-align: center;
+}
+
+/* #footer {
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 10px;
+    background-color: #000000;
+    text-align: center;
+    position: static;
+}
+
+.footer p{
+    color: rgb(255, 255, 255);
+} */
+
+/* social media icons styling */
+/* .social-icons {
+    font-size: 36px;
+    cursor: pointer;
+}
+.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover {
+    color: #ffffff;
+} */
+
+/* background slide */
+
+.slider {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+   }
+    
+   .slider .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    animation: slider 24.5s infinite;
+   }
+    
+   .slider .slide:nth-child(1) {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+      animation-delay: 0s;
+   }
+   
+   .slider .slide:nth-child(2) {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1567808291548-fc3ee04dbcf0?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+      animation-delay: -3.5s;
+   }
+   
+   .slider .slide:nth-child(3) {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+      animation-delay: -7s;
+   }
+   
+   .slider .slide:nth-child(4) {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('https://images.unsplash.com/photo-1489824904134-891ab64532f1?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+      animation-delay: -10.5s;
+   }
+   
+   .slider .slide:nth-child(5) {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('https://images.unsplash.com/photo-1628081182521-d6c4e374357f?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+      animation-delay: -14s;
+   }
+
+   .slider .slide:nth-child(6) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('https://images.unsplash.com/photo-1591293836027-e05b48473b67?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    animation-delay: -17.5s;
+ }
+
+ .slider .slide:nth-child(7) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('https://images.unsplash.com/photo-1576221162298-3d9f04e9f661?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    animation-delay: -21.0s;
+ }
+   
+   
+   @keyframes slider {
+    0%, 17%, 100% {
+      transform: translateX(0);
+      animation-timing-function: ease;
+    }
+    20% {
+      transform: translateX(-100%);
+      animation-timing-function: step-end;
+    }
+    97% {
+      transform: translateX(100%);
+      animation-timing-function: ease;
+    }
+   }

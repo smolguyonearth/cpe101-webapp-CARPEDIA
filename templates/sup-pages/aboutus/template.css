@@ -1,0 +1,77 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    border-bottom: 2px solid white;
+    z-index: 1; /* Added z-index to ensure the navbar is on top of other elements */
+}
+
+.navbar ul{
+    margin-right: 5%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+.navbar ul li{
+    margin: 0 25px;
+}
+.navbar ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 24px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    margin-left: 50%;
+}
+
+.bottom {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-top: 2px solid white;
+    padding: 10px 0;
+    margin-top: 5%;
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    height: 90px;
+}
+.contact ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the social media icons */
+}
+
+.contact ul li {
+    margin-right: 10px;
+}
+
+.contact i {
+    margin: 5px;
+    font-size: 150%;
+    color: white;
+}
+
+.copy {
+    color: white;
+}
+
+.contact ul li p{
+    color: white;
+    position: relative;
+    right: 1.5rem;
+    margin: 1rem;
+}

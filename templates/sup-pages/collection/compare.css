@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: Poppins;
+    background-color: black;
+    color: white;
+}
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+/* cars detail left side */
+.content1{
+    position: relative;
+    height: 100%;
+    width: 45%;
+    background: white; 
+    border: 3px solid black ;
+    border-radius: 15px;
+    box-shadow: 4px 4px 30px rgba(0,0,0,0.06);
+    padding: 20px;
+    color: black;
+    margin-top: 5%;
+}
+.content1 img{
+    position: relative;
+    left: 5%;
+    width: 80%;
+    padding-top: 1%;
+    padding-bottom: 3%;
+    margin-top: 10%;
+}
+/* cars detail right side */
+.content2{
+    width: 45%;
+    height: 528px;
+    background: white; 
+    border-radius: 15px;
+    box-shadow: 4px 4px 30px rgba(255,255,255,0.06);
+    padding: 20px;
+    overflow-y: scroll;
+    color: black;
+    position: relative;
+    margin-top: 50px;
+}
+.content2 .image img{
+    width: 80%;
+    left: 10px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.content2::-webkit-scrollbar{
+    display: none;
+}
+.content2 form{
+    width: 100%;
+    border: 1px solid rgb(82, 74, 235);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.content2 form input{
+    border: none;
+    outline: none;
+    box-shadow: none;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+}
+/* item in search container */
+.item-suggess{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-bottom: 15px;
+    border: 1px solid #110f29 ;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.item-suggess img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 5px; 
+}
+.item-suggess .car-detail {
+    padding-left: 15px;
+}
+
+.item-suggess .car-detail p{
+    font-size: 20px;
+    color: #1d1d1d;
+}.item-suggess .car-detail .price{
+    font-size: 18px;
+}
+/* search bar */
+#search-container {
+    margin: 1em 0;
+    display: flex;
+    justify-content: center;
+  }
+#search-container input {
+    background-color: transparent;
+    width: 100%;
+    border-bottom: 2px solid #110f29;
+    padding: 1em 0.3em;
+    color: black;
+  }
+#search-container input:focus {
+    border-bottom-color: black;
+  }
+#search-container button {
+    padding: 1em 2em;
+    margin-left: 1em;
+    background-color: black;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}

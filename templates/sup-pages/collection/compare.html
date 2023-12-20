@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>compare</title>
+    <link rel="stylesheet" href="compare.css">
+    <link rel="stylesheet" href="template.css">
+</head>
+<body>
+    <div class="navbar">
+        <p><a href="carpedia.html" class="logo" style="font-weight: bold;">CARPEDIA.com</a></p>
+        <ul>
+            <li><a href="http://127.0.0.1:3000/">predict image</a></li>
+            <li><a href="../aboutus/aboutus1.html">about us</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <!-- car detail left side -->
+        <div class="content1">
+            <div class="image">
+                <img src="" alt="">
+            </div>
+            <h1 class="name"></h1>
+            <div class="price"></div> 
+            <h4>Body, Model and Producton details</h4>
+            <div class="body"></div>
+            <div class="year"></div>
+            <div class="model"></div>
+            <div class="make"></div>
+            <div class="door"></div>
+            <h4>Engine Technical Data</h4>
+            <div class="fueltype"></div>
+            <div class="enginetype"></div>
+            <div class="enginedisplacement"></div>
+            <div class="horsepower"></div>
+            <div class="numberofspeed"></div>
+            <div class="tank"></div>
+            <h4>Size, Dimensions and Weight</h4>
+            <div class="wheelbase"></div>
+            <div class="length"></div>
+            <div class="width"></div>
+            <div class="weight"></div>
+            <h4>Performance</h4>
+            <div class="topspeed"></div>
+            <h2><br>Customer Review</h2>
+            <div class="review"></div>
+        </div>
+        <!-- car detail right side -->
+        <div class="content2">
+            <!-- search bar -->
+            <div id="search-container">
+                <input
+                    type="search"
+                    id="search-input"
+                    placeholder="Search product name here.."
+                    onkeyup="search()"
+                    onclick="showCars()"
+                />
+                <!-- <button id="search">Search</button> -->
+            </div>
+            <!-- show all car when click on search bar -->
+            <div class="listCar" id="listCar"></div>
+            <!-- show detail when click on div -->
+            <div class="box">
+                <div class="image">
+                    <img src="" alt="">
+                </div>
+                <div class="content">
+                    <h1 class="name"></h1>
+                    <div class="price"></div> 
+                    <h4>Body, Model and Producton details</h4>
+                    <div class="body"></div>
+                    <div class="year"></div>
+                    <div class="model"></div>
+                    <div class="make"></div>
+                    <div class="door"></div>
+                    <h4>Engine Technical Data</h4>
+                    <div class="fueltype"></div>
+                    <div class="enginetype"></div>
+                    <div class="enginedisplacement"></div>
+                    <div class="horsepower"></div>
+                    <div class="numberofspeed"></div>
+                    <div class="tank"></div>
+                    <h4>Size, Dimensions and Weight</h4>
+                    <div class="wheelbase"></div>
+                    <div class="length"></div>
+                    <div class="width"></div>
+                    <div class="weight"></div>
+                    <h4>Performance</h4>
+                    <div class="topspeed"></div>
+                </div>
+            </div>
+            <div class="article">
+                <h2><br>Customer Review</h2>
+                <div class="review"></div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="contact">
+            <ul>
+                <li>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="far fa-envelope"></i></a>
+                </li>
+                <li>
+                    <p>&#169; CARPEDIA.com</p>
+                </li>
+            </ul>
+        </div>
+    </div> 
+    <script src="https://kit.fontawesome.com/7f2c9fc7c5.js" crossorigin="anonymous"></script>
+    <script src="compare.js"></script>
+</body>
+</html>

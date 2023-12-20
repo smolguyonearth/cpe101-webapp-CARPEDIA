@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="template.css">
+    <script src="https://kit.fontawesome.com/6ab1913385.js" crossorigin="anonymous"></script>
+    <title>Car Catalog</title>
+</head>
+<body>
+    <div class="navbar">
+        <p><a href="carpedia.html" class="logo" style="font-weight: bold;">CARPEDIA.com</a></p>
+        <ul>
+            <li><a href="http://127.0.0.1:3000/">predict image</a></li>
+            <li><a href="../aboutus/aboutus1.html">about us</a></li>
+        </ul>
+    </div>
+    <div class="wrapper">
+        <div id="search-container">
+            <input
+                type="search"
+                id="search-input"
+                placeholder="Search product name here.."
+                onkeyup="search()"
+            />
+            <!-- <button id="search">Search</button> -->
+        </div>
+        <div id="buttons">
+            <button class="button-value" onclick="filterCategory('all')" data-body="all">All</button>
+            <button class="button-value" onclick="filterCategory('Sedan')" data-body="Sedan">Sedan</button>
+            <button class="button-value" onclick="filterCategory('Hatchback')" data-body="Hatchback">Hatchback</button>
+            <button class="button-value" onclick="filterCategory('Coupé')" data-body="Coupé">Coupé</button>
+            <button class="button-value" onclick="filterCategory('SUV')" data-body="SUV">SUV</button>
+            <button class="button-value" onclick="filterCategory('Supercar')" data-body="Supercar">Supercar</button>
+        </div>
+        <div class="listCar" id="listCar"></div>
+    </div>
+    <div class="bottom">
+        <div class="contact">
+            <ul>
+                <li>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="far fa-envelope"></i></a>
+                </li>
+                <li>
+                    <p>&#169; CARPEDIA.com</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

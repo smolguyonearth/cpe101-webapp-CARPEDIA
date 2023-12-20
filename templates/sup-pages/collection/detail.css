@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+    font-family: Poppins;
+    background-color: black;
+    color: white;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 20px;
+}
+.image{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image img{
+    width: 80%;
+}
+
+.box{
+    display: flex;
+    position: relative;
+}
+
+.content{
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 30%;
+    max-width: 50%;
+}
+
+.content h4{
+    font-size: 1.25rem;
+}
+
+.name{
+    font-size: 1.5rem;
+    text-align: center;
+    position: relative;
+}
+
+
+.title p{
+    padding-top: 50px;
+}
+
+.article{
+    margin: 0 50px;
+}
+
+.review{
+    margin:0 50px ;
+}
+
+.container2{
+    background-color: rgb(29, 29, 29);
+    text-align: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+}
+
+.button-89 {
+    position: relative;
+    align-items: center;
+    left: auto; top: 180px;
+    text-align: center;
+    text-decoration: none;
+  --b: 3px;   /* border thickness */
+  --s: .45em; /* size of the corner */
+  --color: #ffffff;
+  
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-89:hover,
+.button-89:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+.button-89:active {
+  background: var(--color);
+  color: #fff;
+}
