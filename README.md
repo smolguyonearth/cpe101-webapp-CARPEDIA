@@ -5,6 +5,6 @@ How to open local:
 1. run app.py in proper environment
 2. open main.html
 
-if u want to runtrainAi.ipynb:
+if u want to run trainAi.ipynb
 use this dataset : https://www.kaggle.com/code/meyrash/starter-stanford-car-dataset-by-78bed566-d 
 import directly to googlecollab by using kaggleAPI
