@@ -6,5 +6,7 @@ How to open local:
 2. open main.html
 
 if u want to run trainAi.ipynb
+
 use this dataset : https://www.kaggle.com/code/meyrash/starter-stanford-car-dataset-by-78bed566-d 
+
 import directly to googlecollab by using kaggleAPI
